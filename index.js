@@ -39,10 +39,10 @@ document.querySelectorAll(".drum")[i].addEventListener("click",(e)=>{
 });
 }
 
-document.addEventListener("keypress",(e)=>{
+document.addEventListener("keypress",function(e){
    console.log(e)
-   let key= e.target.key;
-   player(e.target.key)
+   let key= e.key;
+   player(key)
 })
 
 
